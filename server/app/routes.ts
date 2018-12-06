@@ -13,7 +13,8 @@ export class Routes {
         const router: Router = Router();
 
         router.get("/",
-                   (req: Request, res: Response, next: NextFunction) => this.index.helloWorld(req, res, next));
+            (req: Request, res: Response, next: NextFunction) => this.index.helloWorld(req, res, next));
+
 
         return router;
     }
