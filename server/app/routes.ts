@@ -15,6 +15,10 @@ export class Routes {
         router.get("/",
             (req: Request, res: Response, next: NextFunction) => this.index.helloWorld(req, res, next));
 
+        router.get("/getScores", (req: Request, res: Response) => {
+
+        });
+
 
         return router;
     }
